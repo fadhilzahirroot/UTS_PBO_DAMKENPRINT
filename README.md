@@ -32,7 +32,7 @@ Damken Print adalah aplikasi web sederhana berbasis Laravel 13 untuk mengelola *
 
 ## Persyaratan
 
-- PHP >= 8.2
+- PHP >= 8.3
 - Composer
 - Node.js & NPM (untuk aset frontend)
 
