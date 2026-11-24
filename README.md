@@ -34,14 +34,17 @@ Damken Print adalah aplikasi web sederhana berbasis Laravel 13 untuk mengelola *
 
 - PHP >= 8.3
 - Composer
-- Node.js & NPM (untuk aset frontend)
+- Laragon (Windows)
 
 ## Cara Menjalankan
 
+> Aplikasi ini menggunakan Laragon sebagai server lokal di Windows.
+
 ```bash
-# 1. Clone repository
-git clone https://github.com/fadhilzahirroot/UTS_PBO_DAMKENPRINT.git
-cd UTS_PBO_DAMKENPRINT
+# 1. Clone repository ke folder www Laragon
+cd C:\laragon\www
+git clone https://github.com/fadhilzahirroot/UTS_PBO_DAMKENPRINT.git damkenprint-laravel
+cd damkenprint-laravel
 
 # 2. Install dependensi PHP
 composer install
@@ -53,12 +56,17 @@ cp .env.example .env
 php artisan key:generate
 
 # 5. Pastikan SESSION_DRIVER=file di .env
+```
 
-# 6. Jalankan server
-php artisan serve
+Setelah itu:
+1. Buka aplikasi **Laragon** → klik **Start All**
+2. Buka browser ke:
 
-# 7. Buka browser
-# http://127.0.0.1:8000/karyawan
+```
+http://damkenprint-laravel.test/karyawan
+```
+
+> Laragon otomatis membuat virtual host `damkenprint-laravel.test` untuk setiap folder di dalam `C:\laragon\www`.
 ```
 
 ## Struktur File Utama
