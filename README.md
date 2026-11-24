@@ -27,7 +27,7 @@ Damken Print adalah aplikasi web sederhana berbasis Laravel 13 untuk mengelola *
 - PHP 8.3+
 - Laravel 13
 - Blade Templating Engine
-- Bootstrap 5
+- CSS kustom (vanilla CSS, tanpa framework)
 - Session storage
 
 ## Persyaratan
