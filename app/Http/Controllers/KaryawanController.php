@@ -119,6 +119,12 @@ class KaryawanController extends Controller
     public function destroy($kode)
     {
         $karyawans = session('karyawans', []);
+
+        if (!isset($karyawans[$kode])) {
+            return redirect()->route('karyawan.index')
+                             ->with('status', 'Data karyawan tidak ditemukan.');
+        }
+
         unset($karyawans[$kode]);
         session(['karyawans' => $karyawans]);
 
